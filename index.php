@@ -119,7 +119,7 @@ echo $html;
                 <div class="d-grid gap-2 mt-2">
                 <div class="texto">
                     <p class="subtexto">Não possui uma</p>
-                    <a href="">Conta</a>
+                    <a href="cadastro/cadastro.php">Conta</a>
                 </div>
                 <div class="texto">
                     <input type="checkbox">
