@@ -1,0 +1,14 @@
+[15-Oct-2024 08:12:53 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/editar-perfil.php on line 13
+[15-Oct-2024 08:12:53 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/editar-perfil.php on line 13
+[03-Nov-2024 08:34:53 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/editar-perfil.php on line 13
+[03-Nov-2024 08:34:53 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/editar-perfil.php on line 13
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key "id_usuario" in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 5
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key "nivel_usuario" in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 6
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 16
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 16
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 17
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 17
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 18
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 18
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 19
+[23-Apr-2025 08:13:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home1/dese1709/financeiro.desenvolvesistemas.com.br/painel-adm/index.php on line 19
