@@ -32,7 +32,9 @@ echo $html;
                 <form class="form-signin" method="post" action="autenticar.php">
                 <p class="titulo1">CADASTRE-SE</p>
                 <input type="text" name="cpf" class="form-control_mb-1" placeholder="insira seu CPF">
-                <input type="email" name="email" class="form-control_mb-2" placeholder="inserir seu Email" required autofocus value="">
+                <div class="form-control_mb-2a">
+                    <input type="email" name="email" class="form-control_mb-2" placeholder="inserir seu Email" required>
+                </div>
                 <input type="password" name="senha" class="form-control" placeholder="inserir sua Senha" required value="">
                 <div class="d-grid gap-2 mt-2">
                 <div class="texto">
@@ -49,11 +51,21 @@ echo $html;
         </div>
         <div class="wall2">
                     <p class="titulo2">Bem-vindo a AUGEBIT</p>
-                    <button class="btn_btn-primary" type="submit">Entrar</button>
+                    <div class="custom-select" style="width:325px">
+                        <select name="cargo" id="selecao_cargo">
+                            <option value="0">Selecione Seu Setor:</option>
+                            <option value="1">Serviços de Treinamentos Industriais</option>
+                            <option value="2">Serviços de Projetos Industriais</option>
+                            <option value="3">Departamento de Recursos Humanos</option>
+                            <option value="4">Departamento de Suprimentos</option>
+                        </select>
+                    </div>
+                    <button class="btn_btn-primary" type="submit">CADASTRE-SE</button>
         </div>
     </div>
     
 </div>
 
+ <Script src="cadastro.js"></Script>
 </body>
 </html>
