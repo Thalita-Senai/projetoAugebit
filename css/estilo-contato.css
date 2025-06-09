@@ -52,6 +52,13 @@ input {
     font-size: 28px;
     color: #5B5B5B;
     border: transparent;
+    outline: none;
+}
+
+input:focus,
+input::selection {
+    outline: none;
+    border: none;
 }
 
 .btn_btn-primary {

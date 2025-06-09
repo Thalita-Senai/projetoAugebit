@@ -114,7 +114,7 @@ echo $html;
             <div class="account-wall">
                 <form class="form-signin" method="post" action="autenticar.php">
                 <p class="titulo1">LOGIN</p>
-                <input type="email" name="email" class="form-control_mb-2" placeholder="inserir seu Email" required autofocus value="">
+                <input type="email" name="email" class="form-control_mb-2" placeholder="inserir seu Email" required value="">
                 <input type="password" name="senha" class="form-control" placeholder="inserir sua Senha" required value="">
                 <div class="d-grid gap-2 mt-2">
                 <div class="texto">
