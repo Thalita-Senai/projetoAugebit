@@ -114,8 +114,15 @@ echo $html;
             <div class="account-wall">
                 <form class="form-signin" method="post" action="autenticar.php">
                 <p class="titulo1">LOGIN</p>
-                <input type="email" name="email" class="form-control_mb-2" placeholder="inserir seu Email" required value="">
-                <input type="password" name="senha" class="form-control" placeholder="inserir sua Senha" required value="">
+                <div class="form-control_mb-2">
+                    <img src="img/icons/email_icon.png" alt="" class="icon">
+                    <input type="email" name="email" placeholder="inserir seu Email" required value="">
+                </div>
+                <div class="form-control_mb-2">
+                    <img src="img/icons/senha_icon.png" alt="" class="icon">
+                    <input type="password" name="senha" placeholder="inserir sua Senha" required value="">
+                </div>
+                
                 <div class="d-grid gap-2 mt-2">
                 <div class="texto">
                     <p class="subtexto">Não possui uma</p>
