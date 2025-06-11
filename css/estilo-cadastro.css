@@ -29,6 +29,8 @@
     background-color: #E9E9E9;
     margin: 0 auto;
     margin-top:30px;
+    display: flex;
+    flex-direction: column;
 }
 .login-title
 {
@@ -94,50 +96,33 @@
     margin-bottom: 30px;
 }
 
-.form-control_mb-1 {
+.form-control_mb-2 {
     width: 319px;
     height: 45px;
     background-color: transparent;
-    background-image: url(../img/icons/cpf_icon.png);
+    justify-content: center;
+    align-content: center;
     background-position: 4px;
     background-repeat: no-repeat;
     font-family: 'Poppins';
     font-size: 16px;
     color: #808080;
-    padding-left: 50px;
+    padding-left: 37px;
     border: 1.5px solid black;
     border-radius: 25px;
     box-shadow: 0px 5px 5px #c2c2c2;
     margin-bottom: 20px;
 }
 
-.form-control_mb-2a {
-    background-image: url(../img/icons/email_icon.png);
-    background-position: 4px;
-    background-repeat: no-repeat;
-    width: 319px;
-    height: 45px;
+input {
     background-color: transparent;
-    margin-bottom: 20px;
+    border: none;
 }
 
-.form-control_mb-2,
-.form-control_mb-2:focus,
-.form-control_mb-2:valid {
-    background-color: transparent;
-    width: 319px;
-    height: 45px;
-    display: table-cell;
-    font-family: 'Poppins';
-    font-size: 16px;
-    color: #808080;
-    padding-left: 50px;
-    border: 1.5px solid black;
-    border-radius: 25px;
-    box-shadow: 0px 5px 5px #c2c2c2;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input:focus,
+input::selection {
+    outline: none;
+    border: none;
 }
 
 .form-control {

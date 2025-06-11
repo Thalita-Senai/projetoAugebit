@@ -48,46 +48,66 @@
     </div>
 
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Modal 1</button>
+    <button id="myBtn">Criar 1 Novidade</button>
 
         <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <div class="linha">
-                <p>Criar Novo Post</p>
+            <div class="modal-header">
+                <p class="title">Criar Novo Post</p>
                 <span class="close">&times;</span>
             </div>
-            <div class="coluna1">
-                <img src="" alt="">
-                <button>Arquivos</button>
+            <div class="modal-body">
+                <div class="coluna1">
+                    <button class="imag">X</button>
+                    <img src="" alt="">
+                    <button class="arquivo">Arquivos</button>
+                </div>
+                <div class="coluna2">
+                    <p class="titulo-post">Titulo:</p>
+                    <input type="text" class="input-pequeno">
+                    <p class="titulo-post">Descrição:</p>
+                    <input type="text" class="descricao">
+                    <p class="titulo-post">Titulo:</p>
+                    <div class="linha">
+                        <img src="../img/icons/novidade_icon.png" alt="" class="icon">
+                        <input type="text" class="input-pequeno">
+                    </div>
+                    <div class="linha">
+                        <img src="../img/icons/novidade_icon.png" alt="" class="icon">
+                        <input type="text" class="input-pequeno">
+                    </div>
+                    <div class="botoes">
+                        <button class="enviar">Enviar</button>
+                        <button class="descartar">Descartar</button>
+                    </div>
+                </div>
             </div>
-            <div class="coluna2">
-
-            </div>
+            <div class="modal_footer"></div>
         </div>
     </div>
 
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Modal 2</button>
+    <button id="myBtn_2">Criar 3 Novidade</button>
 
         <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal_2" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <div class="modal-header">
+                <p>Criar 3 novidades principais</p>
+                <span class="close2">&times;</span>
+            </div>
+            
         </div>
     </div>
 
 
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Modal 3</button>
-
         <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal_3" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -99,30 +119,44 @@
 
     <script>
         // Get the modal
-        var modal = document.getElementById("myModal");
+        var modal1 = document.getElementById("myModal");
 
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn1 = document.getElementById("myBtn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementsByClassName("close")[0];
 
         // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
+        btn1.onclick = function() {
+            modal1.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-             modal.style.display = "none";
+        span1.onclick = function() {
+             modal1.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+         // Get the modal
+        var modal2 = document.getElementById("myModal_2");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn_2");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function() {
+            modal2.style.display = "block";
         }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+             modal2.style.display = "none";
+        }
+
+
     </script>
 </body>
 </html>

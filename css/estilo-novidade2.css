@@ -111,7 +111,7 @@
     width: 168px;
     height: 42px;
     margin-left: 550px;
-    border: 2px solid #6E6EFF;
+    border: 2px solid #D9D9D9 solid #6E6EFF;
     border-radius: 20px;
     text-align: center;
     align-content: center;
@@ -183,16 +183,59 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: black;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-header {
+    background-color: #6262E1;
+    height: 69px;
+    align-content: center;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: white;
+    margin-top: 18px;
+    margin-left: 50px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna1 {
+    width: 50%;
+}
+
+.imag {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: #D9D9D9;
+    font-family: 'Poppins';
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    font-weight: 50 ;
+}
+
+.imag:hover {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    color: #4500FF;
+    font-family: 'Poppins';
+    border: 2px solid #4500FF;
+    border-radius: 20px;
+    font-weight: 50;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -204,3 +247,19 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
