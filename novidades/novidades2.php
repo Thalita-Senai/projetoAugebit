@@ -62,22 +62,22 @@
             <div class="modal-body">
                 <div class="coluna1">
                     <button class="imag">X</button>
-                    <img src="" alt="">
+                    <img src="../img/banners/placeholder.png" alt="" class="placeholder">
                     <button class="arquivo">Arquivos</button>
                 </div>
                 <div class="coluna2">
                     <p class="titulo-post">Titulo:</p>
                     <input type="text" class="input-pequeno">
                     <p class="titulo-post">Descrição:</p>
-                    <input type="text" class="descricao">
-                    <p class="titulo-post">Titulo:</p>
+                    <textarea name="descricao" cols="40" rows="5" class="descricao"></textarea>
+                    <p class="titulo-post">Elementos principais:</p>
                     <div class="linha">
                         <img src="../img/icons/novidade_icon.png" alt="" class="icon">
-                        <input type="text" class="input-pequeno">
+                        <input type="text" class="input-pequeno2">
                     </div>
                     <div class="linha">
                         <img src="../img/icons/novidade_icon.png" alt="" class="icon">
-                        <input type="text" class="input-pequeno">
+                        <input type="text" class="input-pequeno2">
                     </div>
                     <div class="botoes">
                         <button class="enviar">Enviar</button>
@@ -98,10 +98,25 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <p>Criar 3 novidades principais</p>
+                <p class="title">Criar 3 novidades principais</p>
                 <span class="close2">&times;</span>
             </div>
-            
+            <div class="modal-body">
+                <div class="steps">
+                    <a a href="modalProdutoUm.php" class="step-dot"></a>
+                    <div class="linha">
+                        <div class="metade-ativa"></div>
+                        <div class="metade-ativa"></div>
+                    </div>
+                    <a href="modalProdutoDois.php" class="step-dot"></a>
+
+                    <div class="linha">
+                        <div class="metade-ativa"></div>
+                        <div class="metade-ativa"></div>
+                    </div>
+                    <a href="modalProdutoTres.php" class="step-dot"></a>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -92,7 +92,8 @@
     justify-items: center;
 }
 
-.icone {
+.icone,
+.icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -186,12 +187,14 @@
   background-color: black;
   margin: 15% auto; /* 15% from the top and centered */
   width: 80%; /* Could be more or less, depending on screen size */
+  height: 80%;
 }
 
 .modal-header {
     background-color: #6262E1;
     height: 69px;
     align-content: center;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -209,6 +212,9 @@
 
 .coluna1 {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
 }
 
 .imag {
@@ -220,6 +226,9 @@
     border: 2px solid #D9D9D9;
     border-radius: 20px;
     font-weight: 50 ;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -15px;
 }
 
 .imag:hover {
@@ -233,8 +242,114 @@
     font-weight: 50;
 }
 
+.arquivo {
+    width: 120px;
+    height: 35px;
+    background-color: #4D4DAC;
+    font-size: 15px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.coluna2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px
+}
+
+.titulo-post {
+    font-family: 'Poppins';
+    font-size: 21px;
+    color: white;
+}
+
+.input-pequeno {
+    width: 450px;
+    height: 30px;
+    background-color: transparent;
+    border-style: solid;
+    margin: 5px solid #808080;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Poppins';
+    color: white
+}
+
+.descricao {
+    width: 450px;
+    height: 171px;
+    line-height: 15px;
+    background-color: transparent;
+    border-style: solid;
+    margin: 5px solid #808080;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Poppins';
+    color: white
+}
+
+.input-pequeno2 {
+    width: 400px;
+    height: 30px;
+    border-style: solid;
+    margin: 5px solid #808080;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.enviar {
+    width: 100px;
+    height: 30px;
+    background-color: #4D4DAC;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.enviar:hover {
+    background-color: white;
+    color: #4D4DAC;
+    border: 2px solid #4d4dac;
+}
+
+.descartar {
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    border: 2px solid #6262E1;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+input::selection,
+input:focus {
+    outline: none;
+    border-style: solid;
+    margin: 5px solid #808080;
+    border-radius: 20px;
+}
+
 /* The Close Button */
-.close {
+.close,
+.close2 {
   color: white;
   float: right;
   font-size: 28px;
@@ -248,14 +363,6 @@
   cursor: pointer;
 }
 
-/* The Close Button */
-.close2 {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 .close2:hover,
 .close2:focus {
   color: black;
@@ -263,3 +370,52 @@
   cursor: pointer;
 }
 
+.placeholder {
+    width: 415px;
+    height: 250px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 100px 50px;
+}
+
+.step-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4747D9;
+    flex-shrink: 0;
+}
+
+.step-dot {
+    cursor: pointer;
+}
+
+.step-dot.inactive {
+    opacity: 0.3;
+}
+
+.linha {
+    display: flex;
+    flex-grow: 1;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.linha-metade {
+    flex: 1;
+    height: 100%;
+}
+
+.linha-ativa {
+    background-color: #4747D9;
+}
+
+.linha .desativa {
+    background-color: #9999FF;
+}
