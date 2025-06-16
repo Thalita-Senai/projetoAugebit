@@ -85,7 +85,9 @@
                     </div>
                 </div>
             </div>
-            <div class="modal_footer"></div>
+            <div class="modal_footer">
+                <p>.</p>
+            </div>
         </div>
     </div>
 
@@ -101,21 +103,36 @@
                 <p class="title">Criar 3 novidades principais</p>
                 <span class="close2">&times;</span>
             </div>
+            <div class="modal-title">
+                <img src="../img/linhas/frame1.png" alt="" class="coiso">
+            </div>
             <div class="modal-body">
-                <div class="steps">
-                    <a a href="modalProdutoUm.php" class="step-dot"></a>
-                    <div class="linha">
-                        <div class="metade-ativa"></div>
-                        <div class="metade-ativa"></div>
-                    </div>
-                    <a href="modalProdutoDois.php" class="step-dot"></a>
-
-                    <div class="linha">
-                        <div class="metade-ativa"></div>
-                        <div class="metade-ativa"></div>
-                    </div>
-                    <a href="modalProdutoTres.php" class="step-dot"></a>
+                <div class="coluna1">
+                    <button class="imag">X</button>
+                    <img src="../img/banners/placeholder.png" alt="" class="placeholder">
+                    <button class="arquivo">Arquivos</button>
                 </div>
+                <div class="coluna2">
+                    <p class="titulo-post">Titulo:</p>
+                    <input type="text" class="input-pequeno-2">
+                    <p class="titulo-post">Descrição:</p>
+                    <textarea name="descricao" cols="40" rows="5" class="descricao"></textarea>
+                    <div class="linha">
+                        <input type="checkbox" id="check">
+                        <p class="textinho">Borda branca</p>
+                    </div>
+                    <div class="linha">
+                        <input type="checkbox" id="check">
+                        <p class="textinho">Borda gradiente</p>
+                    </div>
+                    <div class="botoes">
+                        <button class="enviar" id="proximo1">Próximo</button>
+                        <button class="descartar">Descartar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_footer">
+                    <p>.</p>
             </div>
         </div>
     </div>
@@ -126,8 +143,75 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <div class="modal-header">
+                <p class="title">Criar 3 novidades principais</p>
+                <span class="close3">&times;</span>
+            </div>
+            <div class="modal-title">
+                <img src="../img/linhas/frame2.png" alt="" class="coiso">
+            </div>
+            <div class="modal-body">
+                <div class="coluna1">
+                    <button class="imag">X</button>
+                    <img src="../img/banners/placeholder.png" alt="" class="placeholder">
+                    <button class="arquivo">Arquivos</button>
+                </div>
+                <div class="coluna2">
+                    <p class="titulo-post">Titulo:</p>
+                    <input type="text" class="input-pequeno-2">
+                    <p class="titulo-post">Descrição:</p>
+                    <textarea name="descricao" cols="40" rows="5" class="descricao"></textarea>
+                    <div class="linha">
+                        <input type="checkbox" id="check">
+                        <p class="textinho">Borda branca</p>
+                    </div>
+                    <div class="linha">
+                        <input type="checkbox" id="check">
+                        <p class="textinho">Borda gradiente</p>
+                    </div>
+                    <div class="botoes">
+                        <button class="enviar" id="proximo2">Próximo</button>
+                        <button class="descartar">Descartar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_footer">
+                    <p>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal_4" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="title">Criar 3 novidades principais</p>
+                <span class="close4">&times;</span>
+            </div>
+            <div class="modal-title">
+                <img src="../img/linhas/frame3.png" alt="" class="coiso">
+            </div>
+            <div class="modal-body">
+                <div class="coluna1">
+                    <button class="imag">X</button>
+                    <img src="../img/banners/placeholder.png" alt="" class="placeholder">
+                    <button class="arquivo">Arquivos</button>
+                </div>
+                <div class="coluna2">
+                    <p class="titulo-post">Titulo:</p>
+                    <input type="text" class="input-pequeno-2">
+                    <p class="titulo-post">Descrição:</p>
+                    <textarea name="descricao" cols="40" rows="5" class="descricao"></textarea>
+                    <div class="botoes">
+                        <button class="enviar">Finalizar</button>
+                        <button class="descartar">Descartar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_footer">
+                    <p>.</p>
+            </div>
         </div>
     </div>
 
@@ -170,7 +254,44 @@
         span2.onclick = function() {
              modal2.style.display = "none";
         }
+        
+        // Get the modal
+        var modal3 = document.getElementById("myModal_3");
 
+        // Get the button that opens the modal
+        var btn3 = document.getElementById("proximo1");
+
+        // Get the <span> element that closes the modal
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        // When the user clicks on the button, open the modal
+        btn3.onclick = function() {
+            modal3.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span3.onclick = function() {
+             modal3.style.display = "none";
+        }
+
+         // Get the modal
+        var modal4 = document.getElementById("myModal_4");
+
+        // Get the button that opens the modal
+        var btn4 = document.getElementById("proximo2");
+
+        // Get the <span> element that closes the modal
+        var span4 = document.getElementsByClassName("close4")[0];
+
+        // When the user clicks on the button, open the modal
+        btn4.onclick = function() {
+            modal4.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span4.onclick = function() {
+             modal4.style.display = "none";
+        }
 
     </script>
 </body>

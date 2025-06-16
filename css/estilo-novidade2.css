@@ -196,6 +196,11 @@
     align-content: center;
     margin-bottom: 30px;
 }
+.modal_footer {
+    background-color: #6262E1;
+    height: 50px;
+    color: #6262E1;
+}
 
 .title {
     font-size: 20px;
@@ -208,6 +213,7 @@
 .modal-body {
     display: flex;
     flex-direction: row;
+    background-color: black;
 }
 
 .coluna1 {
@@ -215,6 +221,29 @@
     display: flex;
     flex-direction: column;
     margin-left: 80px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.modal-title {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.coiso {
+    width: 450px;
+}
+
+.textinho {
+    font-size: 18px;
+    color: white;
 }
 
 .imag {
@@ -277,8 +306,20 @@
     color: white
 }
 
+.input-pequeno-2 {
+    width: 500px;
+    height: 30px;
+    background-color: transparent;
+    border-style: solid;
+    margin: 5px solid #808080;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Poppins';
+    color: white
+}
+
 .descricao {
-    width: 450px;
+    width: 500px;
     height: 171px;
     line-height: 15px;
     background-color: transparent;
@@ -287,7 +328,13 @@
     border-radius: 20px;
     padding: 15px;
     font-family: 'Poppins';
-    color: white
+    color: white;
+    margin-bottom: 20px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
 }
 
 .input-pequeno2 {
@@ -348,23 +395,15 @@ input:focus {
 }
 
 /* The Close Button */
-.close,
-.close2 {
+span {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close2:hover,
-.close2:focus {
+span:hover,
+span:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -375,47 +414,4 @@ input:focus {
     height: 250px;
 }
 
-.steps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 100px 50px;
-}
 
-.step-dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #4747D9;
-    flex-shrink: 0;
-}
-
-.step-dot {
-    cursor: pointer;
-}
-
-.step-dot.inactive {
-    opacity: 0.3;
-}
-
-.linha {
-    display: flex;
-    flex-grow: 1;
-    height: 5px;
-    margin: 0 10px;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.linha-metade {
-    flex: 1;
-    height: 100%;
-}
-
-.linha-ativa {
-    background-color: #4747D9;
-}
-
-.linha .desativa {
-    background-color: #9999FF;
-}
