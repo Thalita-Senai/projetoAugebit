@@ -1,4 +1,9 @@
 <style>
+  @font-face {
+            font-family: 'Poppins';
+            src: url(../Fontes/Poppins-Regular.ttf);
+        }
+  
   * {
     font-family: 'Poppins', sans-serif;
     color: #0D0D0F;
@@ -152,7 +157,13 @@
     background-color: black;
   }
 
+  .input1 {
+    font-family: 'Poppins';
+    font-size: 12px;
+  }
+
   .chamativo {
+    font-family: 'Poppins';
     width: 630px;
     height: 160px;
     padding-top: 10px;
