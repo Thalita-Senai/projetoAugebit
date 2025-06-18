@@ -23,43 +23,113 @@
         echo $html;
         ?>
         <div class="banner">
-            <img src="../img/banners/banner_novidades1.png" alt="" class="novidades">
+            <img src="../img/banners/banner_produtos.png" alt="" class="produtos">
+            <p class="title">Tecnologia hightech para você</p>
+            <p class="subtitle">Peça os suprimentos de informática que você precisa.</p>
         </div>
         <div class="colunas">
             <div class="coluna1">
-                <p class="titulo1">Augebit de cara nova</p>
-                <p class="subtitulo1">15 de mai. 2025</p>
+                <div class="nome">
+                    <img src="../img/logo_pequena.png" alt="" class="logo_name">
+                    <p class="name">AUGEBIT</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/mouse.png" alt="" class="icone">
+                    <p class="category">Periféricos</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/computer.png" alt="" class="icone">
+                    <p class="category">Equipamentos</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/cabos.png" alt="" class="icone">
+                    <p class="category">Cabos e conectividade</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/impressora.png" alt="" class="icone">
+                    <p class="category">Impressão e digitalização</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/usb.png" alt="" class="icone">
+                    <p class="category">Manutenção e peças</p>
+                </div>
+                <div class="categoria">
+                    <img src="../img/icons/pedidos.png" alt="" class="icone">
+                    <p class="category">Meus pedidos</p>
+                </div>
             </div>
             <div class="coluna2">
-                <img src="../img/banners/banner_novidades2.png" alt="" class="banner_pc">
-                <p class="titulo1">Novo site, mais ágil e moderno.</p>
-                <p class="texto">Lançamos o novo visual do site da Augebit! Agora com navegação mais rápida, compatibilidade total com dispositivos móveis e um layout mais intuitivo para facilitar sua busca por suprimentos de informática.</p>
-                <p class="titulo2">Novidades</p>
-                <div class="itens">
-                    <img src="../img/icons/novidade_icon.png" alt="" class="icone">
-                    <p class="subtexto">Interface otimizada para desktop e mobile</p>
+                <p class="titulo">Procure por categorias</p>
+                <div class="categorias">
+                    <div class="cat">
+                        <div class="botao">
+                            <img src="../img/icons/mouse_azul.png" alt="" class="bt_icon">
+                        </div>
+                        <p class="cat-title">Periféricos</p>
+                    </div>
+                    <div class="cat">
+                        <div class="botao">
+                            <img src="../img/icons/impressora_azul.png" alt="" class="bt_icon">
+                        </div>
+                        <p class="cat-title">Equipamentos</p>
+                    </div>
+                    <div class="cat">
+                        <div class="botao">
+                            <img src="../img/icons/cabos_azul.png" alt="" class="bt_icon">
+                        </div>
+                        <p class="cat-title">Cabos e conectividade</p>
+                    </div>
+                    <div class="cat">
+                        <div class="botao">
+                            <img src="../img/icons/impressora_azul.png" alt="" class="bt_icon">
+                        </div>
+                        <p class="cat-title">Impressão e digitalização</p>
+                    </div>
+                    <div class="cat">
+                        <div class="botao">
+                            <img src="../img/icons/usb_azul.png" alt="" class="bt_icon">
+                        </div>
+                        <p class="cat-title">Manutenção e peças</p>
+                    </div>
                 </div>
-                <div class="itens">
-                    <img src="../img/icons/novidade_icon.png" alt="" class="icone">
-                    <p class="subtexto">Navegação mais simples e direta</p>
+                <p class="titulo">Confira as novidades</p>
+                <div class="novidades">
+                    <div class="produto">
+                        <div class="adicionar">
+                            <img src="../img/icons/adicionar_icon.png" alt="" class="add">
+                        </div>
+                        <div class="conteudo">
+                            <img src="../img/produtos/teclado.png" alt="" class="banner2">
+                            <p class="nome-prod">Teclado Mecânico de Baixo Ruído</p>
+                            <p class="sub-prod">Digitação com menos barulho no ambiente</p>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="adicionar">
+                            <img src="../img/icons/adicionar_icon.png" alt="" class="add">
+                        </div>
+                        <div class="conteudo">
+                            <img src="../img/produtos/teclado.png" alt="" class="banner2">
+                            <p class="nome-prod">Teclado Mecânico de Baixo Ruído</p>
+                            <p class="sub-prod">Digitação com menos barulho no ambiente</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="area">
-                    <div class="caixa">
-                        <a href="" class="explorar">Explore</a>
+                <div class="linha">
+                    <p class="texto">Gostou? Veja mais</p>
+                    <a href="">aqui</a>
+                </div>
+                <div class="nomes">
+                    <p class="titulo3">Periféricos</p>
+                    <button class="esquerda"><</button>
+                    <button class="direita">></button>
+                </div>
+                <div class="perifericos">
+                    <div class="conteudo_b">
+                        <p class="texto">oier</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="titulos">
-            <div class="nomes">
-                <p class="titulo_azul">Título</p>
-                <p class="subtitulo_azul">15 de mai. 2025</p>
-                <p class="titulo_aqua">Título</p>
-                <p class="subtitulo_aqua">15 de mai. 2025</p>
-                <p class="titulo_rosa">Título</p>
-                <p class="subtitulo_rosa">15 de mai. 2025</p>
-            </div>
-            <img src="../img/banners/banner_novidades3.png" alt="" class="banner_pc">
         </div>
     </div>
 
