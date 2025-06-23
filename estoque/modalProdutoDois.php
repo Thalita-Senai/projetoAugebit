@@ -1,6 +1,9 @@
 
   <style>
-
+    @font-face {
+            font-family: 'Poppins';
+            src: url(../Fontes/Poppins-Regular.ttf);
+        }
 
 
     * {
@@ -16,6 +19,30 @@
       width: 80%;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(13, 13, 15, 0.1); /* atualizado do preto */
+    }
+
+    .back {
+      position: absolute;
+      background-color: white;
+      border: 2px solid black;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      margin-left: 430px;
+      margin-top: 60px;
+    }
+
+    .back-icon {
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: -11px;
     }
 
     .image-section {
@@ -88,17 +115,16 @@
     .title {
       font-size: 50px;
       font-weight: regular;
-      margin-bottom: 50px;
       letter-spacing: 2px;
     }
 
     .info {
-  display: flex;
-  align-items: center; /* Isto alinha tudo no centro verticalmente */
-  gap: 50px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
+     display: flex;
+     align-items: center; /* Isto alinha tudo no centro verticalmente */
+     gap: 50px;
+     margin-bottom: 20px;
+     margin-left: 15px;
+    }
 
 
     .info-item {
@@ -108,11 +134,9 @@
     }
 
     .description {
-      font-size: 14px;
-      line-height: 1.5;
-      margin-top: 80px;
+      text-align: left;
+      margin-top: 30px;
       margin-bottom: 15px;
-      font-size: 18px;
       width: 600px;
       
     }
@@ -156,19 +180,81 @@
       background-image: url('imgs/icones/dimensoesIcone.png');
     }
     .divisor {
-  width: 1px;
-  height: 50px; /* ou 100% se preferir */
-  background-color: black;
-}
- 
+      width: 1px;
+      height: 50px; /* ou 100% se preferir */
+      background-color: black;
 
+    }
+
+  .modal-button {
+    background-color: #4747D9;
+    color: white;
+    margin-top: 15px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+ 
+  .modal-button:hover {
+    background-color: #9999FF;
+  }
+  
+  .categoria {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+  input{
+    margin-top: -15px;
+    border: 0px solid transparent;
+    margin-left: -530px;
+    width: 350px;
+    height: 35px;
+    padding-bottom: 10px;
+  }
+
+  input:focus,
+  input::selection {
+    outline: none;
+    border: none;
+  }
+
+  .c-borda:focus,
+  .c-borda::selection {
+    border-bottom: 2px solid black;
+  }
+
+  .titulo {
+    margin-top: -3px;
+    margin-left: -530px;
+  }
+
+  .c-borda {
+    border-bottom: 2px solid black;
+  }
 
 
   </style>
 
   <div class="container">
     <div class="image-section">
-      <img src="../estilo/imgs/DefaultPainel.png" alt="Mouse Bluetooth">
+      <img src="../img/produtos/imgProduto.png" alt="Mouse Bluetooth">
+    </div>
+    <div class="back">
+      <p class="back-icon"><</p>
     </div>
     <div class="content">
       <div class="steps">
@@ -191,8 +277,29 @@
 
       <div class="title">Especificações do produto</div>
       <div class="description">
-        O mouse óptico RGB da TechPro mede aproximadamente 11 cm x 6 cm x 4 cm e pesa cerca de 90g, sendo leve e confortável para uso diário. Possui conexão USB e é compatível com Windows, macOS e Linux.
-A iluminação RGB pode ser personalizada pelo software oficial da marca, permitindo escolher entre várias cores e efeitos. O produto conta com garantia de 1 ano, cobrindo defeitos de fabricação.
+        <div class="categoria">
+          <img src="../img/icons/price_icon.png" alt="" class="icon">
+          <div class="texto">
+            <p class="titulo">Preço</p>
+            <input type="text" placeholder="R$49,99" class="c-borda">
+          </div>
+        </div>
+
+        <div class="categoria">
+          <img src="../img/icons/image_icon.png" alt="" class="icon">
+          <div class="texto">
+            <p class="titulo">Imagem Principal</p>
+            <input type="text" placeholder="src:imagem.png" class="c-borda">
+          </div>
+        </div>
+
+        <div class="categoria">
+          <img src="../img/icons/image_icon.png" alt="" class="icon">
+          <div class="texto">
+            <p class="titulo">Imagem Pequena</p>
+            <input type="text" placeholder="tamanho quadrado - 500px x 500px">
+          </div>
+        </div>
       </div>
       <button class="modal-button" data-proximo="modalProdutoTres.php">Próximo</button>
 

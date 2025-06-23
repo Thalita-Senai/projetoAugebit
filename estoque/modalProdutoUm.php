@@ -13,10 +13,39 @@
     background: white;
     border-radius: 20px;
     display: flex;
-    height: 90%;
+    height: 95%;
     width: 80%;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(13, 13, 15, 0.1);
+  }
+
+  .edit {
+    position: absolute;
+    margin-top: 625px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: white;
+    margin-left: 310px;
+    border: 3px solid #4747D9;
+  }
+
+  .edit-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  input{
+    margin-top: 5px;
+    border: 0px solid transparent;
+    text-align: center;
+  }
+
+  input:focus,
+  input::selection {
+    outline: none;
+    border: none;
   }
 
   .modal-image-section {
@@ -116,6 +145,7 @@
   .modal-button {
     background-color: #4747D9;
     color: white;
+    margin-top: -10px;
     padding: 10px 50px;
     border: none;
     border-radius: 20px;
@@ -129,8 +159,8 @@
   }
 
   .modal-icon {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     background-color: #9999FF;
     background-size: 60%;
@@ -160,10 +190,24 @@
   .input1 {
     font-family: 'Poppins';
     font-size: 12px;
+    width: 130px;
+  }
+
+  .input2 {
+    font-family: 'Poppins';
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .input3 {
+    font-family: 'Poppins';
+    font-size: 12px;
+    width: 130px;
   }
 
   .chamativo {
     font-family: 'Poppins';
+    font-size: 15px;  
     width: 630px;
     height: 160px;
     padding-top: 10px;
@@ -175,6 +219,9 @@
 
 <div class="modal-overlay" id="modalConteudo">
   <div class="modal-container">
+    <div class="edit">
+        <img src="../img/icons/edit_icon.png" alt="" class="edit-icon">
+    </div>
     <div class="modal-image-section">
 
       <img src="../img/produtos/imgProduto.png" alt="Mouse Bluetooth">

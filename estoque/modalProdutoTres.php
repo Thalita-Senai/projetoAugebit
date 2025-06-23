@@ -1,5 +1,9 @@
 
   <style>
+    @font-face {
+            font-family: 'Poppins';
+            src: url(../Fontes/Poppins-Regular.ttf);
+        }
 
     * {
     font-family: 'Poppins', sans-serif;
@@ -22,6 +26,30 @@
       align-items: center;
       background-color: #9999FF;
       width: 400px;
+    }
+
+    .back {
+      position: absolute;
+      background-color: white;
+      border: 2px solid black;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      margin-left: 430px;
+      margin-top: 60px;
+    }
+
+    .back-icon {
+      justify-content: center;
+      font-size: 50px;
+      font-style: bold;
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: -11px;
     }
 
     .image-section img {
@@ -162,7 +190,7 @@
   }
   textarea {
     margin: 20px 0;
-    width: 90%; 
+    width: 75%; 
     height: 200px; 
     border-radius: 10px; 
     border: 1px solid black; 
@@ -178,25 +206,62 @@
     width:90%;
     line-height: 1.3;
   }
-  .claro {
-    background-color: transparent;
+  
+  .descricao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .coiso {
+    margin-top: 20px;
+    background-color: #CBCBFF;
+    height: 200px;
+    width: 25%;
+    margin-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icone {
+    width: 85px;
+  }
+
+  .texto,
+  .texto::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
     color: black;
-    border: 1px solid black;
-    margin: 0 20px 0 10px;
-  }
-  .claro:hover {
-    background-color: black;
-    color: white;
-    transition: 1.1s;
+    width: 45px;
+    background-color: transparent;
+    border: 0px solid transparent;
   }
 
 
+  input:focus,
+  input::selection {
+    outline: none;
+    border: none;
+  }
+
+  .subtexto {
+    color: #0D0D0F;
+    opacity: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
 
   </style>
 
   <div class="container">
     <div class="image-section">
-      <img src="../estilo/imgs/DefaultPainel.png" alt="Mouse Bluetooth">
+      <img src="../img/produtos/imgProduto.png" alt="Mouse Bluetooth">
+    </div>
+    <div class="back">
+      <p class="back-icon"><</p>
     </div>
     <div class="content">
       <div class="steps">
@@ -217,13 +282,16 @@
         <a href="modalProdutoTres.php" class="step-dot"></a>
       </div>
 
-      <div class="title">Pedido de Manutenção</div>
-      <div class="subtitulo">Deseja mandar seu produto quebrado pra manutenção e receber um novo em troca?</div>
-      <textarea
-  placeholder="Descreva o problema do produto para que possamos resolvê-lo"
-></textarea>
-        <button class="button claro">Não preciso</button>
-      <button class="button">Enviar  pedido</button>
+      <div class="title">Detalhes e quantidade</div>
+      <div class="descricao">
+        <textarea placeholder="Descrição dos detalhes do produto"></textarea>
+        <div class="coiso">
+          <img src="../img/icons/estoque_icon.png" alt="" class="icone">
+          <input type="text" class="texto" placeholder="125">
+          <p class="subtexto">Quantidade em Estoque</p>
+        </div>
+      </div>
+      <button class="button">Finalizar</button>
     </div>
   </div>
 
